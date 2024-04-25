@@ -684,7 +684,7 @@ namespace TextRpg
         {
             if (item[num - 1].notHave)
             {
-                if (gold[0] >= 1000)
+                if (gold[0] >= item[num - 1].value)
                 {
                     item[num - 1].notHave = false;
                     int leftGold = gold[0] - item[num - 1].value;
