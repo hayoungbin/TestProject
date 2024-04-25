@@ -687,7 +687,7 @@ namespace TextRpg
                 if (gold[0] >= 1000)
                 {
                     item[num - 1].notHave = false;
-                    int leftGold = gold[0] - 1000;
+                    int leftGold = gold[0] - item[num - 1].value;
                     gold[0] = leftGold;
                     NowBuyMessage();
                     ShopBuy(gold, item);
